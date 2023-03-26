@@ -8,8 +8,9 @@
 
     &-item{
         display: flex;
-        align-items: center;
+        align-items: baseline;
         gap: 10px;
+
 
         &__dots{
             display: flex;
@@ -25,10 +26,30 @@
                 display: block;
 
             }
+        }
 
-            
+        &.wake-launch{
+            background-color: #C405F2;
 
+            &>*{
+                color: #FFFFFF;
+                font-weight: 700;
+                
+            }
+
+            .who-item__dots:after{
+                border-color: #FFFFFF;
+            }
         }
             
+        &__description{
+            transform: translate(0, -15px);
+            font-size: 16px;
+            line-height: 20px;
+            
+            &--date{
+                font-weight: 700;
+            }
+        }
     }
 }
