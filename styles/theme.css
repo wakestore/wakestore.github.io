@@ -179,6 +179,7 @@ input[type=search] {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
+  min-height: 810px;
   text-align: center;
   color: #1E1E1E;
 }
@@ -293,6 +294,15 @@ input[type=search] {
   border: 0.5px dashed #77777A;
   display: block;
 }
+.who-item__dots:before {
+  content: "";
+  width: 1px;
+  height: 50px;
+  border: 0.5px solid #D9D9D9;
+  position: absolute;
+  top: 40px;
+  left: 23%;
+}
 .who-item.wake-launch {
   background-color: #C405F2;
 }
@@ -302,6 +312,9 @@ input[type=search] {
 }
 .who-item.wake-launch .who-item__dots:after {
   border-color: #FFFFFF;
+}
+.who-item.wake-launch .who-item__dots:before {
+  display: none;
 }
 .who-item__description {
   transform: translate(0, -15px);
