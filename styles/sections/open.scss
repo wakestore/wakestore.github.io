@@ -1,3 +1,70 @@
 .open{
-    background: url(D:\benova\wakestore.github.io\image\run.png);
+    background-image: url('../image/run.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    
+    text-align: center;
+    color: #1E1E1E;
+
+    &-call{
+        font-size: 48px;
+        line-height: 100%;
+        font-weight: 700;
+
+        &__color{
+            color: #C405F2;
+        }
+    }
+
+    &-expert{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        font-size: 16px;
+        line-height: 18px;
+        margin: 68px 0;
+
+        &__itens{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        &__item{
+            display: flex;
+            flex-direction: column;
+            padding: 25px;
+            border: 0.5px solid #C505F2;
+            border-radius: 5px;
+            font-size: 24px;
+            line-height: 28px;
+
+            &--description{
+                font-size: 16px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    &-confirm{
+        &__title{
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: 700;
+        }
+        
+        &__link{
+            display: inline-block;
+            margin-top: 56px;
+            background: #C505F2;
+            padding: 15px 29px;
+            color: #FFFFFF;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
 }
