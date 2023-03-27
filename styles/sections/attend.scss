@@ -1,0 +1,32 @@
+.attend {
+    margin-top: 230px;
+    margin-bottom: 205px;
+    text-align: center;
+    color:#1E1E1E;
+    font-weight: 700;
+
+    &-text{
+        font-size: 36px;
+        line-height: 41px;
+    }
+
+    &-call{
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    &-link{
+        display: inline-block;
+        color: #FFFFFF;
+        background: #C505F2;
+        border-radius: 4px;
+        padding: 15px 30px;
+        transition: ease-in-out .4s;
+
+        &:hover{
+            background: #c705f280;
+        }
+    }
+}
