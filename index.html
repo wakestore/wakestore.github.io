@@ -102,9 +102,11 @@
     <section class="section date">
         <div class="container">
             <div class="date-day">
-                <span>8h30 - 18h</span>
-                26 mar <br> Arca / SP
+                <span class="date-day__time">08h30 - 18h</span>
+                <span class="date-day__date">26 abr</span>
+                <span class="date-day__locate">Arca / SP</span>
             </div>
+            <div class="date-container" id="countdown"></div>
         </div>
     </section>
 
@@ -433,3 +435,32 @@
     </div>
 </footer>
 </html>
+
+<script>
+    // Define a data e hora inicial
+    var inicio = new Date("2023-04-26T08:30:00Z");
+
+    // Seleciona a div countdown
+    var countdown_div = document.getElementById("countdown");
+
+    // Loop infinito para atualizar o contador a cada segundo
+    setInterval(function() {
+    // Calcula o tempo restante até o momento atual
+    var agora = new Date();
+    var tempo_restante = inicio - agora;
+
+    // Verifica se o tempo acabou
+    if (tempo_restante <= 0) {
+        countdown_div.innerHTML = "O evento começou!";
+        return;
+    }
+
+    // Extrai os dias, horas e minutos restantes
+    var dias = Math.floor(tempo_restante / (1000 * 60 * 60 * 24));
+    var horas = Math.floor((tempo_restante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutos = Math.floor((tempo_restante % (1000 * 60 * 60)) / (1000 * 60));
+
+    // Exibe o tempo restante formatado na div countdown
+    countdown_div.innerHTML = "<div class='date-container__all'><span class='date-container__numbers'>" + dias + "</span> <span class='date-container__itens'>dias</span></div> " + "<div class='date-container__all'><span class='date-container__numbers'>" + horas + "</span> <span class='date-container__itens'>horas</span></div> " + "<div class='date-container__all'><span class='date-container__numbers'>" + minutos + "</span> <span class='date-container__itens'>minutos</span></div>";
+    }, 1000);
+</script>

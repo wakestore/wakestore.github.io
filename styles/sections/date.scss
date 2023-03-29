@@ -1,0 +1,67 @@
+.date{
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 40px 0;
+
+    .container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &-day{
+        display: flex;
+        flex-direction: column;
+
+        &__time{
+            font-size: 24px;
+            line-height: 28px;
+            
+
+            &:after{
+                content: '';
+                display: block;
+                background-color: #C405F2;
+                width: 100%;
+                height: 1px;
+                margin: 10px 0;
+            }
+        }
+
+        &__date{
+            font-size: 36px;
+            line-height: 41px;
+        }
+        
+        &__locate{
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+
+    &-container {
+        display: flex;
+        text-align: center;
+        gap: 50px;
+
+        &__all{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        &__numbers{
+            font-size: 48px;
+            line-height: 55px;
+        }
+    
+        &__itens{
+            font-size: 20px;
+            line-height: 23px;
+            text-transform: uppercase;
+            color: #C405F2;
+        }
+    }
+    
+}
