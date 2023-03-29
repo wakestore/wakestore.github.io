@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  font-family: "Helvetica";
+  font-family: "Helvetica", sans-serif;
   font-weight: 300;
 }
 
