@@ -13,7 +13,7 @@
             align-items: center;
 
             &__item{
-                margin: 0 10px;
+                margin: 0 20px;
                 cursor: pointer;
                 position: relative;
 
@@ -44,14 +44,14 @@
                     background-color: #C405F2;
                     position: absolute;
                     bottom: -5px;
-                    left: 0;
+                    left: -7.5px;
                     transition: ease-in-out .4s; 
                 }
 
                 &:hover{
 
                     &:after{
-                        width: 100%;
+                        width: calc( 100% + 15px );
                     }
                 }
             }

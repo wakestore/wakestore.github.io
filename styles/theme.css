@@ -147,7 +147,7 @@ input[type=search] {
   align-items: center;
 }
 .header .navigate-list__item {
-  margin: 0 10px;
+  margin: 0 20px;
   cursor: pointer;
   position: relative;
 }
@@ -173,11 +173,11 @@ input[type=search] {
   background-color: #C405F2;
   position: absolute;
   bottom: -5px;
-  left: 0;
+  left: -7.5px;
   transition: ease-in-out 0.4s;
 }
 .header .navigate-list__item:hover:after {
-  width: 100%;
+  width: calc(100% + 15px);
 }
 .header .navigate-list__link {
   color: #1E1E1E;
