@@ -99,42 +99,42 @@ input[type=search] {
   font-family: "Helvetica";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/Helvetica.ttf") format("truetype");
+  src: url(/fonts/Helvetica.ttf) format("truetype");
 }
 @font-face {
   font-family: "Helvetica";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/Helvetica-Bold.ttf") format("truetype");
+  src: url(/fonts/Helvetica-Bold.ttf) format("truetype");
 }
 @font-face {
   font-family: "Helvetica";
   font-style: italic;
-  src: url("/fonts/Helvetica-Oblique.ttf") format("truetype");
+  src: url(/fonts/Helvetica-Oblique.ttf) format("truetype");
 }
 @font-face {
   font-family: "Helvetica";
   font-style: italic;
   font-weight: 700;
-  src: url("/fonts/Helvetica-BoldOblique.ttf") format("truetype");
+  src: url(/fonts/Helvetica-BoldOblique.ttf) format("truetype");
 }
 @font-face {
   font-family: "Helvetica Compressed";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/helvetica-compressed-5871d14b6903a.otf") format("truetype");
+  src: url(/fonts/helvetica-compressed-5871d14b6903a.otf) format("truetype");
 }
 @font-face {
   font-family: "Helvetica";
   font-style: normal;
   font-weight: 200;
-  src: url("/fonts/helvetica-light-587ebe5a59211.ttf") format("truetype");
+  src: url(/fonts/helvetica-light-587ebe5a59211.ttf) format("truetype");
 }
 @font-face {
   font-family: "Helvetica Rounded";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/helvetica-rounded-bold-5871d05ead8de.otf") format("truetype");
+  src: url(/fonts/helvetica-rounded-bold-5871d05ead8de.otf) format("truetype");
 }
 .header {
   display: flex;
@@ -263,7 +263,7 @@ input[type=search] {
   background-color: #C405F2;
   color: #FFFFFF;
   clip-path: polygon(0 0, 100% 38%, 100% 100%, 0 100%);
-  padding: 60px 35px 25px;
+  padding: 60px 20px 25px;
   font-size: 20px;
   font-weight: 700;
   line-height: 23px;
@@ -276,6 +276,7 @@ input[type=search] {
 .speakers .speaker-description__function {
   font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
 }
 .speakers .speaker-description__function:before {
   content: "";
@@ -388,7 +389,7 @@ input[type=search] {
   margin-bottom: 105px;
   text-align: center;
   color: #1E1E1E;
-  font-weight: 700;
+  font-weight: 400;
 }
 .attend-text {
   font-size: 36px;
@@ -407,6 +408,8 @@ input[type=search] {
   border-radius: 4px;
   padding: 15px 30px;
   transition: ease-in-out 0.4s;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 .attend-link:hover {
   background: rgba(199, 5, 242, 0.5019607843);

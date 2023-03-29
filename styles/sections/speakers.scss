@@ -17,7 +17,7 @@
             background-color: #C405F2;
             color: #FFFFFF;
             clip-path: polygon(0 0, 100% 38%, 100% 100%, 0 100%);
-            padding: 60px 35px 25px;
+            padding: 60px 20px 25px;
 
             font-size: 20px;
             font-weight: 700;
@@ -32,6 +32,7 @@
             &__function{
                 font-size: 14px;
                 line-height: 18px;
+                font-weight: 400;
 
                 &:before{
                     content: '';
