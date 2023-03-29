@@ -256,7 +256,8 @@ input[type=search] {
 }
 .date .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 180px;
   align-items: center;
 }
 .date-day {
