@@ -1,61 +1,24 @@
 .open{
-    background-image: url('../image/run.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: bottom;
-
-    min-height: 810px;
-    
+    background-color: #FAFAFA;
     text-align: center;
     color: #1E1E1E;
 
     &-call{
-        font-size: 48px;
+        font-size: 40px;
         line-height: 100%;
         font-weight: 700;
+        margin-bottom: 50px;
 
         &__color{
             color: #C405F2;
         }
     }
 
-    &-expert{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 40px;
-        font-size: 16px;
-        line-height: 18px;
-        margin: 68px 0;
-
-        &__itens{
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        &__item{
-            display: flex;
-            flex-direction: column;
-            padding: 25px;
-            border: 0.5px solid #C505F2;
-            border-radius: 5px;
-            font-size: 24px;
-            line-height: 28px;
-
-            &--description{
-                font-size: 16px;
-                line-height: 18px;
-            }
-        }
+    &-image{
+        margin: 50px 0;
     }
 
     &-confirm{
-        &__title{
-            font-size: 24px;
-            line-height: 28px;
-            font-weight: 700;
-        }
         
         &__link{
             display: inline-block;
@@ -67,6 +30,12 @@
             font-weight: 700;
             font-size: 16px;
             line-height: 18px;
+            text-transform: uppercase;
+            transition: ease-in-out .4s;
+
+            &:hover{
+                background: rgba(199, 5, 242, 0.5019607843);
+            }
         }
     }
 }
