@@ -29,3 +29,24 @@ $mobile: 1025px;
     }
 }
 
+.desktop {
+    @include device(desktop) {
+        display: block;
+    }
+    
+
+    @include device(mobile) {
+        display: none;
+    }
+}
+
+.mobile {
+    @include device(desktop) {
+        display: none;
+    }
+    
+
+    @include device(mobile) {
+        display: block;
+    }
+}

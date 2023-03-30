@@ -1,13 +1,11 @@
 .who{
 
     .container{
-        max-width: 1000px;
-    }
-
-    &-itens{
-
-
-
+        
+        @include device(mobile) {
+            padding: 0;
+        }
+        
     }
 
     &-item{
@@ -21,6 +19,15 @@
             align-items: center;
             gap: 10px;
             position: relative;
+
+            svg{
+                background: white;
+                z-index: 9;
+            }
+
+            @include device(mobile) {
+                padding-left: 25px;
+            }
             
             &:after{
                 content: '';
@@ -38,11 +45,19 @@
                 position: absolute;
                 top: 40px;
                 left: 23%;
+
+                @include device(mobile){
+                    height: 120px;
+                    top: 6px;
+                    left: 40%;
+                }
             }
         }
 
         &.wake-launch{
             background-color: #C405F2;
+            padding-top: 30px;
+            padding-bottom: 30px;
 
             &>*{
                 color: #FFFFFF;
@@ -52,6 +67,14 @@
 
             .who-item__dots:after{
                 border-color: #FFFFFF;
+                
+            }
+
+            .who-item__dots {
+                svg{
+                    background: #C405F2;
+                    z-index: 9;
+                }
             }
 
             .who-item__dots:before{
@@ -63,6 +86,10 @@
             transform: translate(0, -15px);
             font-size: 16px;
             line-height: 20px;
+
+            @include device(mobile) {
+                padding-right: 25px;
+            }
             
             &--date{
                 font-weight: 700;

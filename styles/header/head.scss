@@ -5,6 +5,19 @@
     justify-content: space-between;
     padding: 10px 0;
 
+    @include device(mobile) {
+        padding: 30px 10px;
+
+        &-logo {
+
+            svg{
+                max-width: 90px;
+                max-height: 40px;
+            }
+        }
+    }
+    
+
     .navigate {
 
         @include device(mobile) {

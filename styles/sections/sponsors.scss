@@ -1,22 +1,36 @@
 .sponsor{
+
+    @include device(mobile) {
+        padding: 0 25px;
+        &-aws {
+            order: 1;
+        }
+        &-vindi {
+            order: 2;
+        }
+    }
     
-    .container, .sponsor-double{
+    .container{
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 61px;
+
+        @include device(mobile){
+            flex-direction: column;
+        }
     }
 
-    &-aws{
-        grid-area: aws;
+    &-double{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 61px;
+
+        @include device(mobile){
+            order: 3;
+            gap: 20px;
+        }
     }
-    &-vindi{
-        grid-area: vindi;
-    }
-    &-benova{
-        grid-area: benova;
-    }
-    &-clear{
-        grid-area: clear;
-    }
+
 }
