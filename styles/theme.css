@@ -185,7 +185,7 @@ input[type=search] {
   top: 0;
   left: 0;
   z-index: 99;
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 1025px) {
   .header {
@@ -414,6 +414,14 @@ input[type=search] {
 }
 .speakers .speaker-profile {
   position: relative;
+  overflow: hidden;
+}
+.speakers .speaker-profile img {
+  transform: scale(1);
+  transition: ease-in-out 0.3s;
+}
+.speakers .speaker-profile img:hover {
+  transform: scale(1.1);
 }
 .speakers .speaker-description {
   background-color: #C405F2;
