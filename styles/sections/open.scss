@@ -16,6 +16,15 @@
 
     &-image{
         margin: 50px 0;
+
+        @include device(mobile) {
+            img{
+                margin-top: 20px;
+                width: 145px;
+                margin: auto;
+            }
+            
+        }
     }
 
     &-confirm{

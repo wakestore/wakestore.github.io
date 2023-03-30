@@ -1,6 +1,29 @@
 .who{
+    @include device(desktop){
+        &-itens {
+            flex: .5
+        }
+
+        &-image {
+            flex: .5;
+            
+            img{
+                height: 1115px;
+            }
+        }
+
+        .section-title{
+            margin-top: 65px;
+            margin-bottom: 49px;
+        }
+    }
+    
 
     .container{
+        @include device(desktop) {
+            display: flex;
+            flex-direction: row-reverse;
+        }
         
         @include device(mobile) {
             padding: 0;
@@ -28,6 +51,10 @@
             @include device(mobile) {
                 padding-left: 25px;
             }
+
+            @include device(desktop) {
+                padding-left: 60px;
+            }
             
             &:after{
                 content: '';
@@ -40,11 +67,12 @@
             &:before{
                 content: "";
                 width: 1px;
-                height: 50px;
+                height: 110px;
                 border: 0.5px solid #D9D9D9;
                 position: absolute;
-                top: 40px;
-                left: 23%;
+                top: 15px;
+                left: 55%;
+                z-index: 9;
 
                 @include device(mobile){
                     height: 120px;
@@ -58,6 +86,20 @@
             background-color: #C405F2;
             padding-top: 30px;
             padding-bottom: 30px;
+            @include device(desktop) {
+                position: relative;
+
+                &:before{
+                    content:'';
+                    width: 80px;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: -70px;
+                    background-color: #C405F2;
+                    border-radius: 5px;
+                }
+            }
 
             &>*{
                 color: #FFFFFF;
