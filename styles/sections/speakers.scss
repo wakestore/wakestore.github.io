@@ -30,8 +30,8 @@
 
             position: absolute;
             bottom: 0;
-            right: 0;
-            width: calc(100%);
+            right: -0.5px;
+            width: calc(100% + .5px);
 
             &__function{
                 font-size: 14px;

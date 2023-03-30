@@ -386,8 +386,8 @@ input[type=search] {
   letter-spacing: 2px;
   position: absolute;
   bottom: 0;
-  right: 0;
-  width: 100%;
+  right: -0.5px;
+  width: calc(100% + 0.5px);
 }
 .speakers .speaker-description__function {
   font-size: 14px;
