@@ -1,13 +1,12 @@
 .section{
-    padding: 80px 0;
+    padding-bottom: 56px;
 
     &-title{
+        font-size: 40px;
+        line-height: 100%;
         font-weight: 700;
-        font-size: 48px;
-        line-height: 55px;
         text-align: center;
-
-        margin-bottom: 90px;
+        margin-bottom: 56px;
 
         @include device(mobile) {
             font-size: 36px;

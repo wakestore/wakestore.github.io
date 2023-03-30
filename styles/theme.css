@@ -115,14 +115,14 @@ input[type=search] {
 }
 
 .section {
-  padding: 80px 0;
+  padding-bottom: 56px;
 }
 .section-title {
+  font-size: 40px;
+  line-height: 100%;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 55px;
   text-align: center;
-  margin-bottom: 90px;
+  margin-bottom: 56px;
 }
 @media screen and (max-width: 1025px) {
   .section-title {
@@ -400,6 +400,7 @@ input[type=search] {
 }
 
 .speakers {
+  padding-top: 56px;
   background-color: #FAFAFA;
 }
 .speakers-profiles {
@@ -494,17 +495,18 @@ input[type=search] {
     flex: 0.5;
   }
   .who-image img {
-    height: 1115px;
+    max-height: 1090px;
   }
   .who .section-title {
-    margin-top: 65px;
-    margin-bottom: 49px;
+    margin-top: 56px;
+    margin-bottom: 48px;
   }
 }
 @media screen and (min-width: 1026px) {
   .who .container {
     display: flex;
     flex-direction: row-reverse;
+    max-height: 1090px;
   }
 }
 @media screen and (max-width: 1025px) {
@@ -565,6 +567,7 @@ input[type=search] {
   background-color: #C405F2;
   padding-top: 30px;
   padding-bottom: 30px;
+  border-radius: 5px;
 }
 @media screen and (min-width: 1026px) {
   .who-item.wake-launch {
@@ -618,7 +621,7 @@ input[type=search] {
   font-size: 40px;
   line-height: 100%;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 56px;
 }
 .open-call__color {
   color: #C405F2;
@@ -702,8 +705,6 @@ input[type=search] {
 }
 
 .attend {
-  margin-top: 30px;
-  margin-bottom: 105px;
   text-align: center;
   color: #1E1E1E;
   font-weight: 400;

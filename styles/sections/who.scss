@@ -8,13 +8,13 @@
             flex: .5;
             
             img{
-                height: 1115px;
+                max-height: 1090px;
             }
         }
 
         .section-title{
-            margin-top: 65px;
-            margin-bottom: 49px;
+            margin-top: 56px;
+            margin-bottom: 48px;
         }
     }
     
@@ -23,6 +23,7 @@
         @include device(desktop) {
             display: flex;
             flex-direction: row-reverse;
+            max-height: 1090px;
         }
         
         @include device(mobile) {
@@ -86,6 +87,7 @@
             background-color: #C405F2;
             padding-top: 30px;
             padding-bottom: 30px;
+            border-radius: 5px;
             @include device(desktop) {
                 position: relative;
 
