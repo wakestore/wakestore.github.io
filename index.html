@@ -191,7 +191,7 @@
         <div class="speakers-profiles container">
             <div class="speaker-profile">
                 <figure>
-                    <img src="/image/karine-alves.png" alt="Karine Alves">
+                    <img src="/image/pb/karine-alves.png" alt="Karine Alves">
                     <figcaption class="speaker-description">
                         Karine <br>Alves <br>
                         <span class="speaker-description__function">Apresentadora e jornalista no <b>Grupo Globo</b></span>
@@ -200,7 +200,7 @@
             </div>
             <div class="speaker-profile">
                 <figure>
-                    <img src="/image/ronaldo-lemos.png" alt="Ronaldo Lemos">
+                    <img src="/image/pb/ronaldo-lemos.png" alt="Ronaldo Lemos">
                     <figcaption class="speaker-description">
                         Ronaldo <br>Lemos <br>
                         <span class="speaker-description__function">Advogado, professor e <br>apresentador na <b>GloboNews</b> </span>
@@ -218,7 +218,7 @@
             </div>
             <div class="speaker-profile">
                 <figure>
-                    <img src="/image/andre-kfouri.png" alt="André Kfouri">
+                    <img src="/image/pb/andre-kfouri.png" alt="André Kfouri">
                     <figcaption class="speaker-description">
                         André <br>Kfouri <br>
                         <span class="speaker-description__function">Jornalista esportivo na <b>ESPN Brasil</b></span>
@@ -543,7 +543,7 @@
     var countdown_div = document.getElementById("countdown");
 
     // Define o conteúdo inicial da div como "Carregando..."
-    countdown_div.innerHTML = "<div class='date-container__all'><span class='date-container__numbers'>" + 00 + "</span> <span class='date-container__itens'>dias</span></div> " + "<div class='date-container__all'><span class='date-container__numbers'>" + 00 + "</span> <span class='date-container__itens'>horas</span></div> " + "<div class='date-container__all'><span class='date-container__numbers'>" + 00 + "</span> <span class='date-container__itens'>minutos</span></div>";
+    countdown_div.innerHTML = "<div class='date-container__all'><span class='date-container__numbers'>00</span> <span class='date-container__itens'>dias</span></div> " + "<div class='date-container__all'><span class='date-container__numbers'>00</span> <span class='date-container__itens'>horas</span></div> " + "<div class='date-container__all'><span class='date-container__numbers'>00</span> <span class='date-container__itens'>minutos</span></div>";
 
     // Loop infinito para atualizar o contador a cada segundo
     setInterval(function() {
@@ -561,6 +561,11 @@
     var dias = Math.floor(tempo_restante / (1000 * 60 * 60 * 24));
     var horas = Math.floor((tempo_restante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutos = Math.floor((tempo_restante % (1000 * 60 * 60)) / (1000 * 60));
+
+      // Formata os números para garantir que tenham dois dígitos
+        dias = dias.toLocaleString('pt-BR', {minimumIntegerDigits: 2});
+        horas = horas.toLocaleString('pt-BR', {minimumIntegerDigits: 2});
+        minutos = minutos.toLocaleString('pt-BR', {minimumIntegerDigits: 2});
 
     // Exibe o tempo restante formatado na div countdown
     countdown_div.innerHTML = "<div class='date-container__all'><span class='date-container__numbers'>" + dias + "</span> <span class='date-container__itens'>dias</span></div> " + "<div class='date-container__all'><span class='date-container__numbers'>" + horas + "</span> <span class='date-container__itens'>horas</span></div> " + "<div class='date-container__all'><span class='date-container__numbers'>" + minutos + "</span> <span class='date-container__itens'>minutos</span></div>";

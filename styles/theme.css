@@ -193,6 +193,31 @@ input[type=search] {
   background-image: url("/image/banner-bike.png");
   background-size: cover;
   min-height: 702px;
+  padding: 70px;
+  color: #FFFFFF;
+}
+.first-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+}
+.first-title:after {
+  content: "";
+  display: block;
+  background-color: #C405F2;
+  width: 17em;
+  height: 1px;
+  margin: 35px 0;
+}
+.first-stores {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 40px 0;
+}
+.first-subtitle {
+  font-size: 20px;
+  line-height: 23px;
 }
 
 .date {
