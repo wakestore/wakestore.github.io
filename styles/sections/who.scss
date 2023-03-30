@@ -80,6 +80,10 @@
                     top: 6px;
                     left: 40%;
                 }
+
+                @media screen and (max-width: 360px) {
+                    height: 160px;
+                }
             }
         }
 
