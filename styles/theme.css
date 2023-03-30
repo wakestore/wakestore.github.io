@@ -178,6 +178,15 @@ input[type=search] {
   justify-content: space-between;
   padding: 10px 0;
 }
+.header-fixed {
+  background-color: #fff;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.02);
+}
 @media screen and (max-width: 1025px) {
   .header {
     padding: 30px 10px;
