@@ -39,6 +39,12 @@
         .container{
             display: flex;
             justify-content: space-between;
+
+            @include device(mobile) {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
         }
 
         &__text{

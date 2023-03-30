@@ -6,6 +6,10 @@
         display: flex;
         justify-content: center;
         gap: 22px;
+
+        @include device(mobile) {
+            flex-direction: column;
+        }
     }
     
     .speaker{

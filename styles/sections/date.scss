@@ -9,6 +9,12 @@
         justify-content: center;
         gap: 180px;
         align-items: center;
+
+        @include device(mobile) {
+            gap: 30px;
+            flex-direction: column;
+            text-align: center;
+        }
     }
 
     &-day{
@@ -27,6 +33,10 @@
                 width: calc( 100% + 30px );
                 height: 1px;
                 margin: 10px 0;
+
+                @include device(mobile) {
+                    margin-left: -15px;
+                }
             }
         }
 

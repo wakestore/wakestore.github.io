@@ -16,8 +16,16 @@ $mobile: 1025px;
 }
 
 .container{
-    width: calc(100% - 90px);
-    max-width: 1440px;
-    margin: auto;
+    @include device(desktop) {
+        width: calc(100% - 90px);
+        max-width: 1440px;
+        margin: auto;
+    }
+    
+
+    @include device(mobile) {
+        width: 100%;
+        padding: 0 25px;
+    }
 }
 

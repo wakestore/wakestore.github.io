@@ -1,7 +1,15 @@
-.container {
-  width: calc(100% - 90px);
-  max-width: 1440px;
-  margin: auto;
+@media screen and (min-width: 1026px) {
+  .container {
+    width: calc(100% - 90px);
+    max-width: 1440px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .container {
+    width: 100%;
+    padding: 0 25px;
+  }
 }
 
 html, body, div, span, applet, object, iframe,
@@ -142,6 +150,11 @@ input[type=search] {
   justify-content: space-between;
   padding: 10px 0;
 }
+@media screen and (max-width: 1025px) {
+  .header .navigate {
+    display: none;
+  }
+}
 .header .navigate-list {
   display: flex;
   align-items: center;
@@ -193,8 +206,18 @@ input[type=search] {
   background-image: url("/image/banner-bike.png");
   background-size: cover;
   min-height: 702px;
-  padding: 70px;
   color: #FFFFFF;
+}
+@media screen and (min-width: 1026px) {
+  .first {
+    padding: 70px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .first {
+    padding-top: 140px;
+    padding-bottom: 100px;
+  }
 }
 .first-title {
   font-weight: 700;
@@ -209,11 +232,21 @@ input[type=search] {
   height: 1px;
   margin: 35px 0;
 }
+@media screen and (max-width: 1025px) {
+  .first-title:after {
+    width: 100%;
+  }
+}
 .first-stores {
   display: flex;
   align-items: center;
   gap: 25px;
   margin: 40px 0;
+}
+@media screen and (max-width: 1025px) {
+  .first-stores {
+    flex-wrap: wrap;
+  }
 }
 .first-subtitle {
   font-size: 20px;
@@ -232,6 +265,13 @@ input[type=search] {
   gap: 180px;
   align-items: center;
 }
+@media screen and (max-width: 1025px) {
+  .date .container {
+    gap: 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .date-day {
   display: flex;
   flex-direction: column;
@@ -247,6 +287,11 @@ input[type=search] {
   width: calc(100% + 30px);
   height: 1px;
   margin: 10px 0;
+}
+@media screen and (max-width: 1025px) {
+  .date-day__time:after {
+    margin-left: -15px;
+  }
 }
 .date-day__date {
   font-size: 36px;
@@ -284,6 +329,11 @@ input[type=search] {
   display: flex;
   justify-content: center;
   gap: 22px;
+}
+@media screen and (max-width: 1025px) {
+  .speakers-profiles {
+    flex-direction: column;
+  }
 }
 .speakers .speaker-profile {
   position: relative;
@@ -416,6 +466,11 @@ input[type=search] {
   background: rgba(26, 26, 26, 0.85);
   border-radius: 4px;
 }
+@media screen and (max-width: 1025px) {
+  .map-description {
+    padding: 25px 30px;
+  }
+}
 .map-description__title {
   font-weight: 700;
   font-size: 24px;
@@ -514,6 +569,13 @@ input[type=search] {
 .footer-bottom .container {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 1025px) {
+  .footer-bottom .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
 }
 .footer-bottom__text {
   color: #FFFFFF;

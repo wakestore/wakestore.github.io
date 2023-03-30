@@ -6,6 +6,10 @@
     padding: 10px 0;
 
     .navigate {
+
+        @include device(mobile) {
+            display: none;
+        }
     
         &-list{
 
