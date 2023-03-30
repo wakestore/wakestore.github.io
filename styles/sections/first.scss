@@ -1,7 +1,11 @@
 .first{
-    background-image: url('/image/banner-mountain-1.webp');
+    background-image: url('/image/banner-mountain.webp');
     background-size: cover;
-    min-height: 702px;
+    background-position: top;
+    background-repeat: no-repeat;
+    min-height: 615px;
+    height: 100%;
+    color: #FFFFFF;
     
     @include device(desktop) {
         padding: 70px;
