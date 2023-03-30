@@ -141,18 +141,18 @@ input[type=search] {
   font-family: "Helvetica";
   font-style: normal;
   font-weight: 700;
-  src: url(/fonts/Helvetica-Bold.ttf) format("truetype");
+  src: url(/fonts/helvetica-bold.ttf) format("truetype");
 }
 @font-face {
   font-family: "Helvetica";
   font-style: italic;
-  src: url(/fonts/Helvetica-Oblique.ttf) format("truetype");
+  src: url(/fonts/helvetica-oblique.ttf) format("truetype");
 }
 @font-face {
   font-family: "Helvetica";
   font-style: italic;
   font-weight: 700;
-  src: url(/fonts/Helvetica-BoldOblique.ttf) format("truetype");
+  src: url(/fonts/helvetica-boldoblique.ttf) format("truetype");
 }
 @font-face {
   font-family: "Helvetica Compressed";
