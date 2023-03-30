@@ -34,34 +34,42 @@
                 </svg>
                     
             </a>
+
+            <div class="sub-menu mobile">
+                <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5498 8.99995C5.5498 8.52256 5.74471 8.06472 6.09166 7.72716C6.4386 7.38959 6.90915 7.19995 7.3998 7.19995H29.5998C30.0905 7.19995 30.561 7.38959 30.908 7.72716C31.2549 8.06472 31.4498 8.52256 31.4498 8.99995C31.4498 9.47734 31.2549 9.93518 30.908 10.2727C30.561 10.6103 30.0905 10.8 29.5998 10.8H7.3998C6.90915 10.8 6.4386 10.6103 6.09166 10.2727C5.74471 9.93518 5.5498 9.47734 5.5498 8.99995ZM5.5498 18C5.5498 17.5226 5.74471 17.0647 6.09166 16.7272C6.4386 16.3896 6.90915 16.2 7.3998 16.2H29.5998C30.0905 16.2 30.561 16.3896 30.908 16.7272C31.2549 17.0647 31.4498 17.5226 31.4498 18C31.4498 18.4773 31.2549 18.9352 30.908 19.2727C30.561 19.6103 30.0905 19.8 29.5998 19.8H7.3998C6.90915 19.8 6.4386 19.6103 6.09166 19.2727C5.74471 18.9352 5.5498 18.4773 5.5498 18ZM5.5498 27C5.5498 26.5226 5.74471 26.0647 6.09166 25.7272C6.4386 25.3896 6.90915 25.2 7.3998 25.2H29.5998C30.0905 25.2 30.561 25.3896 30.908 25.7272C31.2549 26.0647 31.4498 26.5226 31.4498 27C31.4498 27.4773 31.2549 27.9352 30.908 28.2727C30.561 28.6103 30.0905 28.8 29.5998 28.8H7.3998C6.90915 28.8 6.4386 28.6103 6.09166 28.2727C5.74471 27.9352 5.5498 27.4773 5.5498 27Z" fill="black"/>
+                </svg>                    
+            </div>
     
             <nav class="navigate">
                 <ul class="navigate-list">
                     <li class="navigate-list__item">
-                        <a class="navigate-list__link" href="#" title="Voltar ao Início">O evento</a>
+                        <a class="navigate-list__link" href="#evento" title="Voltar ao Início">O evento</a>
                     </li>
                     <li class="navigate-list__item">
-                        <a class="navigate-list__link" href="#" title="Ir para Palestrantes">Palestrantes</a>
+                        <a class="navigate-list__link" href="#palestrante" title="Ir para Palestrantes">Palestrantes</a>
                     </li>
                     <li class="navigate-list__item">
-                        <a class="navigate-list__link" href="#" title="Ir para Quem Somos">Quem somos</a>
+                        <a class="navigate-list__link" href="#quem-somos" title="Ir para Quem Somos">Quem somos</a>
                     </li>
                     <li class="navigate-list__item">
-                        <a class="navigate-list__link" href="#" title="Ir para Patrocinadores">Patrocinadores</a>
+                        <a class="navigate-list__link" href="#patrocinio" title="Ir para Patrocinadores">Patrocinadores</a>
                     </li>
                     <li class="navigate-list__item">
-                        <a class="navigate-list__link" href="#" title="Ir para Localização">Localização</a>
+                        <a class="navigate-list__link" href="#local" title="Ir para Localização">Localização</a>
                     </li>
                     <li class="navigate-list__item subscribe">
                         <a class="navigate-list__link" href="https://www.wakestore.tech" title="Ir para Inscreva-se">Confirme sua presença</a>
                     </li>
                 </ul>
             </nav>
+
+            
         </div>
         
     </header>
 
-    <section class="first">
+    <section class="first" id="evento">
         <div class="container">
             <h1 class="first-title">Wake: a nova marca enterprise <br> da Locaweb Company está <br> chegando para <span class="first-title__color">revolucionar</span> </h1>
     
@@ -179,7 +187,7 @@
 
     <section class="section date">
         <div class="container">
-            <div class="date-day">
+            <div class="date-day" id="palestrante">
                 <span class="date-day__time">08h30 - 18h</span>
                 <span class="date-day__date">26 abr</span>
                 <span class="date-day__locate">Arca / SP</span>
@@ -250,7 +258,7 @@
                 <img class="mobile" src="/image/passo-passo-mob.png" alt="Passo a Passo da Loja">
             </div>
     
-            <div class="open-confirm">
+            <div class="open-confirm" id="quem-somos">
                 <a href="https://www.wakestore.tech" class="open-confirm__link" title="Confirmar Presença">Confirme sua Presença</a>
             </div>
         </div>
@@ -406,8 +414,8 @@
             </div>
         </div>
     </section>
-   
-    <section class="section sponsor">
+    <span id="patrocinio"></span>
+    <section class="section sponsor" id="patrocinio">
         <h2 class="section-title">Quem está com a gente nesta jornada</h2>
         <div class="container" style="text-align: center;">
             <!-- AWS -->
@@ -540,6 +548,8 @@
                 
         </div>
     </section>
+
+    <span id="local"></span>
     
     <section class="section">
         <div class="map">
@@ -650,13 +660,31 @@
     }, 1000);
 
     // Abertura de Menu
-    const menuBtn = document.querySelector('.navigate-btn');
-    const nav = document.querySelector('nav');
+    // Seleciona o elemento com a classe "sub-menu"
+    var subMenu = document.querySelector('.sub-menu');
 
-    menuBtn.addEventListener('click', toggleMenu);
+    // Seleciona o elemento com a classe "navigate"
+    var navigate = document.querySelector('.navigate');
 
-    function toggleMenu() {
-    nav.classList.toggle('open');
-    menuBtn.classList.toggle('open');
-    }
+    // Seleciona o elemento com a classe "navigate-list__item"
+    var navigateListItems = document.querySelectorAll('.navigate-list__item');
+
+    // Adiciona um evento de clique no elemento "subMenu"
+    subMenu.addEventListener('click', function() {
+    // Adiciona a classe "open" ao elemento "navigate"
+    navigate.classList.toggle('open-menu');
+    });
+
+    // Adiciona um evento de clique em cada elemento "navigateListItems"
+    navigateListItems.forEach(function(navigateListItem) {
+    navigateListItem.addEventListener('click', function(event) {
+        // Verifica se o evento de clique foi no elemento filho da "navigateListItem"
+        if (event.target.closest('.navigate-list__item')) {
+        // Remove a classe "open" do elemento "navigate"
+        navigate.classList.remove('open-menu');
+        }
+    });
+});
+
+
 </script>

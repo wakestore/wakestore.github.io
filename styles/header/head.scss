@@ -30,14 +30,45 @@
     .navigate {
 
         @include device(mobile) {
-            display: none;
+            position: fixed;
+            top: 100px;
+            left: -100vw;
+            background-color: #fff;
+            height: 100%;
+            width: 95vw;
+            padding-top: 40px;
+            transition: ease-in-out 0.6s;
+
+            .navigate-list__link{
+                margin: 15px 30px;
+                display: inline-block;
+                font-size: 16px;
+                line-height: 25px;
+            }
+
+            .navigate-list__item{
+
+                &.subscribe{
+                    .navigate-list__link{
+                        text-align: center;
+                        display: block;
+                        margin: 0;
+                    }
+                }
+            }
+
+            &.open-menu{
+                left: 0;
+                
+            }
         }
+
     
         &-list{
-
+            @include device(desktop) {
             display: flex;
             align-items: center;
-
+        }
             &__item{
                 margin: 0 20px;
                 cursor: pointer;
@@ -74,12 +105,20 @@
                     bottom: -5px;
                     left: -7.5px;
                     transition: ease-in-out .4s; 
+
+                    @include device(mobile) {
+                        bottom: 7px;
+                    }
                 }
 
                 &:hover{
 
                     &:after{
                         width: calc( 100% + 15px );
+
+                        @include device(mobile) {
+                            width: calc( 100% + 2px );
+                        }
                     }
                 }
             }
