@@ -1,0 +1,22 @@
+.sponsor{
+    
+    .container, .sponsor-double{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 61px;
+    }
+
+    &-aws{
+        grid-area: aws;
+    }
+    &-vindi{
+        grid-area: vindi;
+    }
+    &-benova{
+        grid-area: benova;
+    }
+    &-clear{
+        grid-area: clear;
+    }
+}

@@ -366,6 +366,25 @@ input[type=search] {
   margin: 10px 0;
 }
 
+.sponsor .container, .sponsor .sponsor-double {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 61px;
+}
+.sponsor-aws {
+  grid-area: aws;
+}
+.sponsor-vindi {
+  grid-area: vindi;
+}
+.sponsor-benova {
+  grid-area: benova;
+}
+.sponsor-clear {
+  grid-area: clear;
+}
+
 .who .container {
   max-width: 1000px;
 }
