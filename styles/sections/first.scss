@@ -1,8 +1,8 @@
 .first{
     
-    background-image: url('/image/primeira-dobra.png');
+    background-image: url('/image/primeira-dobra.webp');
     @include device(mobile) {
-        background-image: url('/image/primeira-dobra-mb.png');
+        background-image: url('/image/primeira-dobra-mb.webp');
     }
     background-size: cover;
     background-position: top;
