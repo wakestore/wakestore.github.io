@@ -233,22 +233,20 @@ input[type=search] {
   cursor: pointer;
   position: relative;
 }
-.header .navigate-list__item.subscribe {
+.header .navigate-list__item.subscribe .navigate-list__link {
   background: #C505F2;
   padding: 15px;
   border-radius: 4px;
   transition: ease-in-out 0.2s;
-}
-.header .navigate-list__item.subscribe .navigate-list__link {
   color: #fff;
   font-size: 16px;
   font-weight: 700;
 }
+.header .navigate-list__item.subscribe .navigate-list__link:hover {
+  background: rgba(199, 5, 242, 0.5019607843);
+}
 .header .navigate-list__item.subscribe:after {
   display: none;
-}
-.header .navigate-list__item.subscribe:hover {
-  background: rgba(199, 5, 242, 0.5019607843);
 }
 .header .navigate-list__item:after {
   content: "";
