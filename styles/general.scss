@@ -1,5 +1,5 @@
-$desktop: 1026px;
-$mobile: 1025px;
+$desktop: 1236px;
+$mobile: 1235px;
 
 @mixin device($size) {
     @if $size ==desktop {

@@ -87,8 +87,9 @@
             background-color: #C405F2;
             padding-top: 30px;
             padding-bottom: 30px;
-            border-radius: 5px;
+            
             @include device(desktop) {
+                border-radius: 5px;
                 position: relative;
 
                 &:before{
