@@ -471,6 +471,7 @@ input[type=search] {
 @media screen and (max-width: 1235px) {
   .sponsor {
     padding: 0 25px;
+    padding-bottom: 40px;
   }
   .sponsor-aws {
     order: 1;
