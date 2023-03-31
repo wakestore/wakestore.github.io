@@ -15,6 +15,10 @@ $mobile: 1235px;
     }
 }
 
+.st0{
+    fill:#050505;
+}
+
 .container{
     @include device(desktop) {
         width: calc(100% - 90px);
