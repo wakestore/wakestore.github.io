@@ -210,7 +210,7 @@ input[type=search] {
 @media screen and (max-width: 1235px) {
   .header .navigate {
     position: fixed;
-    top: 100px;
+    top: 60px;
     left: -100vw;
     background-color: #fff;
     height: 100%;
@@ -674,7 +674,7 @@ input[type=search] {
   padding: 15px 29px;
   color: #FFFFFF;
   border-radius: 4px;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -718,7 +718,7 @@ input[type=search] {
 }
 .map-description__maps {
   display: block;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: inherit;
@@ -763,7 +763,7 @@ input[type=search] {
   padding: 15px 30px;
   transition: ease-in-out 0.4s;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
 }
 .attend-link:hover {
   background: rgba(199, 5, 242, 0.5019607843);
