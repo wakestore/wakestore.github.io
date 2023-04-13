@@ -258,8 +258,46 @@
             </div>
 
             <div class="open-image">
-                <img class="desktop" src="/image/passo-passo.webp" alt="Passo a Passo da Loja">
-                <img class="mobile" src="/image/passo-passo-mob.webp" alt="Passo a Passo da Loja">
+                <section class="step content">
+                    <div class="step-carousel">
+                        <div class="step-carousel__item">
+                            <img class="step-image" src="/image/Logo Wake Store.png" alt="Logo Wake Store" title="Wake Store">
+                            <div class="step-column">
+                                <p class="step-text">Visite a Wake Store</p>
+                                <p class="step-title">para ter uma experiência <br> com o ecossistema e <br> fazer sua inscrição</p>
+                            </div>
+                        </div>
+                        <div class="step-carousel__item step-icon step-icon__bag">
+                            <div class="step-column">
+                                <p class="step-title">Escolha até <br> <span class="step-text">2 brindes</span> que <br>
+                                serão retirados <br>
+                                durante o evento
+                                </p>
+                            </div>
+                        </div>
+                        <div class="step-carousel__item step-icon step-icon__data">
+                            <div class="step-column">
+                                <p class="step-title">No carrinho, <span class="step-text">preencha <br> seus dados.</span><br>
+                                    Eles garantirão seu <br>
+                                    acesso ao evento
+                                </p>
+                            </div>
+                        </div>
+                        <div class="step-carousel__item step-icon step-icon__cart">
+                            <div class="step-column">
+                                <p class="step-title">Finalize a compra dos <br> brindes, <span class="step-text">sem custo algum.</span><br>
+                                    Isso é parte <br>
+                                    da experiência Wake
+                                </p>
+                            </div>
+                        </div>
+                        <div class="step-carousel__item step-last step-icon step-icon__check">
+                            <div class="step-column">
+                                <p class="step-title">Pronto! <br> <span class="step-text">Você está inscrito <br> no evento de <br> lançamento da Wake </span></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
     
             <div class="open-confirm" id="quem-somos">
@@ -657,6 +695,45 @@
             }
         ]
     });
+
+    jQuery(function() {
+    jQuery(".step-carousel").slick({
+        lazyLoad: 'ondemand',
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        autoplay: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        responsive: [
+            {
+            breakpoint: 1300,
+            settings: {
+                slidesToShow: 3,
+            },
+            },
+            {
+            breakpoint: 1000,
+            settings: {
+                slidesToShow: 2,
+            },
+            },
+            {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+            },
+            },
+        ],
+    })
+    })
+
+    $('.step-carousel__item').click(function(){
+    $('.step-carousel').slick('slickNext'); // avança para o próximo item do Slick
+    });
+
+    window.addEventListener('load',function(){var minhaDiv=document.querySelector('.step');minhaDiv.classList.add('mostrar');});
 </script>
 
 </html>
