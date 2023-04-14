@@ -15,9 +15,17 @@ $mobile: 1235px;
     }
 }
 
-.st0{
+.black{
     fill:#050505;
 }
+
+.blue{
+    fill:#004993;
+}
+
+.st1{fill:#FDC90A;}
+
+.st2{fill:#868686;}
 
 .container{
     @include device(desktop) {
