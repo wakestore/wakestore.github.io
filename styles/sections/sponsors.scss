@@ -4,21 +4,14 @@
         padding-bottom: 16px;
     }
 
-    @include device(mobile) {
-        &.section{
-            padding-bottom: 16px;
-        }
-        
-        padding: 0 25px;
-        padding-bottom: 40px;
-        
-        &-aws {
-            order: 1;
-        }
+    @include device(desktop) {
         &-vindi {
-            order: 2;
+            max-width: 84px;
         }
     }
+    
+
+    
 
     .section-title{
         margin-bottom: 40px;
@@ -71,6 +64,10 @@
             vertical-align: middle;
             margin: 0 30px;
         }
+    }
+
+    &-brasil{
+        height: 31px !important;
     }
 
     &-double{
