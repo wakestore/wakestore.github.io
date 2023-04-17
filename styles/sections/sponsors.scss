@@ -1,10 +1,16 @@
 .sponsor{
 
+    
+
     &.section{
         padding-bottom: 16px;
     }
 
     @include device(desktop) {
+        &-slider{
+            width: 90%;
+        }
+
         &-vindi {
             max-width: 84px;
         }
@@ -35,10 +41,9 @@
         }
 
         svg{
-            max-height: 40px;
-            height: 40px;
+            max-height: 30px;
+            height: 30px;
             vertical-align: middle;
-            margin: 0 30px;
         }
 
         img{
@@ -62,7 +67,12 @@
             max-height: 40px;
             height: 40px;
             vertical-align: middle;
-            margin: 0 30px;
+            @include device(desktop) {
+                margin: 0 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
 
