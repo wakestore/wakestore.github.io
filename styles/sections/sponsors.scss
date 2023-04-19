@@ -24,6 +24,7 @@
     }
     
     .container{
+        gap: 10px;
 
         @include device(desktop){
             display: flex;

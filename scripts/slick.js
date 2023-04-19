@@ -4,7 +4,7 @@ $('.sponsor-slider').slick({
     arrows: false,
     autoplay: true,
     speed: 500,
-    slidesToShow: 6,
+    slidesToShow: 7,
     slidesToScroll: 1,
 
     responsive: [
