@@ -2,7 +2,7 @@
     
     background-image: url('/image/close_back.png');
     @include device(mobile) {
-        background-image: url('/image/primeira-dobra-mb.webp');
+        background-image: url('/image/close_back-mob.png');
     }
     background-size: cover;
     background-position: top;
